@@ -1,0 +1,29 @@
+/* App.css */
+
+.marquee-wrapper {
+    display: flex;
+    overflow: hidden; /* Esconde o conteúdo que ultrapassa o limite */
+    width: 100%;
+  }
+  
+  .marquee-item {
+    flex-shrink: 0;
+    white-space: nowrap;
+    font-size: 24px;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    margin-right: 20px;
+    animation: slide 10s linear infinite;
+  }
+  
+  /* Definindo a animação de deslizamento */
+  @keyframes slide {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
